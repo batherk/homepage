@@ -1,0 +1,21 @@
+div.content{
+  text-align: center;
+  width: 100vw;
+}
+
+div.App{
+  height:100%;
+  width: 100%;
+}
+
+img#background-image{
+  position:absolute;
+  top:0;
+  left:0;
+  min-width: 200%;
+  min-height: 200%;
+  object-fit: fill;
+  filter:brightness(30%);
+  z-index:-1;
+  transform: translateZ(-1px) scale(2);
+}
