@@ -1,5 +1,6 @@
 :root{
-  --primary-color: #f5a142;
+  --primary-color: #DDDF00;
+  --secondary-color: #BEBF00;
   --transition: ease-in-out 0.6s;
   --scroll-background:#1f1f1f;
   --scroll-thumb: #0f0f0f;
@@ -54,7 +55,7 @@ body::-webkit-scrollbar-track{
 }
 
 a{
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: var(--transition);
 }
