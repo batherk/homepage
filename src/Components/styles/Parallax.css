@@ -2,7 +2,7 @@
 /* Screen specific */
 
 @media (orientation:portrait){
-    .parallax{
+    div.parallax{
         flex-direction: column;
         align-items: center;
     }
@@ -10,6 +10,10 @@
     div.parallax > div.text-box{
         margin-top: 5vh;
         margin-bottom: 5vh;
+    }
+
+    div.parallax > div.image, div.parallax > div.text-box{
+        width: 90%;
     }
 }
 
