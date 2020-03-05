@@ -15,6 +15,22 @@
     div.parallax > div.image, div.parallax > div.text-box{
         width: 90%;
     }
+
+    div.parallax > div.image{
+        height: 70vh;
+    }
+
+    div.parallax > div.text-box{
+        height: auto;
+    }
+
+    div.parallax div.text-box h2{
+        font-size: 30px;
+    }
+
+    div.parallax div.text-box p{
+        font-size: 15px;
+    }
 }
 
 @media(orientation:landscape){
@@ -31,14 +47,22 @@
 
     div.parallax{
         flex-direction:row;
-        height: 80vh;
         justify-content: space-evenly;
+        height: 80vh;
         align-items: center;
     }
 
     div.parallax[image-side="right"]{
         flex-direction: row-reverse;
       }
+
+      div.parallax div.text-box h2{
+        font-size: 50px;
+    }
+
+    div.parallax div.text-box p{
+        font-size: 20px;
+    }
 
 }
 
@@ -60,8 +84,10 @@ div.parallax > div.text-box{
 
 /* On image hover */
 
-div.parallax > div.image:hover + div.text-box > h2{
+div.parallax > div.image:hover + div.text-box p, div.parallax > div.image:hover + div.text-box h2,
+div.parallax > div.image:hover + div.text-box a{
     color: white;
+    transition: var(--transition);
 }
 
 div.parallax > div.image:hover + div.text-box{

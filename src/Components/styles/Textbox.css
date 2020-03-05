@@ -1,7 +1,6 @@
 h2{
     font-weight: 50;
-    font-size: 40px;
-    color:var(--green-neon);
+    color:var(--primary-color);
     transition: var(--transition);
 }
 
@@ -10,4 +9,8 @@ div.text-box{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+div.text-box p li{
+    text-align: left;
 }

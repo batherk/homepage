@@ -1,5 +1,5 @@
 :root{
-  --green-neon: greenyellow;
+  --primary-color: #f5a142;
   --transition: ease-in-out 0.6s;
   --scroll-background:#1f1f1f;
   --scroll-thumb: #0f0f0f;
@@ -51,4 +51,10 @@ body::-webkit-scrollbar-track{
     border: 1px solid var(--scroll-background);
     border-radius: 5px;
   }
+}
+
+a{
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
 }
