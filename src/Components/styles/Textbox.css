@@ -4,3 +4,10 @@ h2{
     color:var(--green-neon);
     transition: var(--transition);
 }
+
+div.text-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

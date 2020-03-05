@@ -14,15 +14,15 @@
 }
 
 @media(orientation:landscape){
-    .parallax > .image, .parallax > p{
+    div.parallax > div.image, div.parallax > div.text-box{
         height: 80%;
     }
-    .parallax > .image{
-        width: 40%;
+    div.parallax > div.image{
+        width: 40vw;
     }
 
-    .parallax > p{
-        width: 40%;
+    div.parallax > div.text-box{
+        width: 40vw;
     }
 
     div.parallax{

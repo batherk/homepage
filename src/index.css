@@ -1,6 +1,6 @@
 :root{
   --green-neon: greenyellow;
-  --transition: ease-in-out 1s;
+  --transition: ease-in-out 0.6s;
 }
 
 html{
