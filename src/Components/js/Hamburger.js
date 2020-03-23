@@ -6,7 +6,7 @@ export default ()=>{
 
   return (
     <div className={isOpen? "hamburger-cont menu-open" : "hamburger-cont"}>
-        <button className="menu-button"></button>
+        <button className="menu-button" onClick={()=>setIsOpen(!isOpen)}></button>
         <div className="hamburger"><div></div></div>
     </div>
   );
