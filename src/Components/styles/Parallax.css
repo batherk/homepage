@@ -82,6 +82,7 @@ div.parallax > div.text-box{
 }
 
 
+
 /* On image hover */
 
 div.parallax > div.image:hover + div.text-box p, div.parallax > div.image:hover + div.text-box h2,

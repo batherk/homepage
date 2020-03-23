@@ -1,9 +1,0 @@
-div.background img#background-image{
-    position:absolute;
-    top:0;
-    left:0;
-    object-fit: cover;
-    filter:brightness(30%);
-    z-index:-1;
-    transform: translateZ(-1px) scale(2);
-  }

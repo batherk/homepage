@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './../styles/App.css';
-import { Parallax, Background } from '.'
+import {Parallax, Hamburger} from '.'
 
 export default ()=>{
 
@@ -15,7 +15,7 @@ export default ()=>{
 
   return (
     <div className="App">
-      <img id="background-image" src="/img/wallpaper.png"/>
+      <Hamburger/>
       <div className="content">
       {posts.map((post,index)=>{
         const imageSide = (index % 2 === 0 ? "left" : "right")

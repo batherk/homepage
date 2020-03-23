@@ -2,6 +2,6 @@ import Image from './Image'
 import Parallax from './Parallax'
 import TextBox from './Textbox'
 import App from './App'
-import Background from './Background'
+import Hamburger from './Hamburger'
 
-export {TextBox, Image, Parallax, App, Background}
+export {TextBox, Image, Parallax, App, Hamburger}
