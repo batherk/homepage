@@ -6,5 +6,5 @@ div.content{
 div.App{
   height:100%;
   width: 100%;
-  background: url(/img/twill.jpg);
+  background: url(/img/twill.jpg) fixed;
 }
