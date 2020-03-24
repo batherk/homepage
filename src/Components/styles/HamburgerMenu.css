@@ -1,0 +1,62 @@
+div.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+
+div.menu > div.category{
+    margin: 5px 0px;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.menu > div.category > div.header-container{
+    width: 30%;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.menu > div.category > div.header-container h3{
+    text-align: right;
+    font-size: 30px;
+}
+
+div.menu > div.category > ul{
+    width: 70%;
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* List items*/
+div.menu li{
+    text-decoration: none;
+    color: var(--secondary-color);
+    list-style-type: none;
+    margin: 0px 1px;
+    font-size: 30px;
+  }
+  
+  div.menu li.current{
+    cursor:default;
+    color:var(--primary-color);
+  }
+
+  div.menu li.other{
+    cursor: pointer;
+  }
+  
+  
+  div.menu li.other:hover{
+    color:var(--primary-color);
+  }
+  

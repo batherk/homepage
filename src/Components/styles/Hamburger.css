@@ -3,7 +3,7 @@ div.hamburger-cont{
     top:20px;
     right:30px;
     z-index:1;
-    height: 60vh;
+    height: auto;
     background-color:transparent;
     border-radius: 10px;
     transition: var(--transition);
@@ -133,27 +133,5 @@ div.hamburger-cont{
   }
   
 
-}
-  
-/* Menu list*/
-div.hamburger-cont > div.menu li{
-  text-decoration: none;
-  color: var(--primary-color);
-  list-style-type: none;
-  margin-bottom: 5px;
-  font-size: 30px;
-}
-
-div.hamburger-cont > div.menu li.current{
-  text-decoration: underline;
-  cursor:default;
-}
-div.hamburger-cont > div.menu li.other{
-  cursor: pointer;
-}
-
-
-div.hamburger-cont > div.menu li.other:hover{
-  color:var(--secondary-color);
 }
 
