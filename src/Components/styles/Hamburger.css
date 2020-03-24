@@ -8,6 +8,8 @@ div.hamburger-cont{
     border-radius: 10px;
     transition: var(--transition);
     clip-path: circle(30px at calc(100% - 35px) 30px);
+    max-height: 90vh;
+    overflow-y: scroll;
   }
   
   div.hamburger-cont div.hamburger{
@@ -59,7 +61,8 @@ div.hamburger-cont{
 
 @media(orientation:landscape){
   div.hamburger-cont{
-    width: 40vw;
+    min-width: 40vw;
+    max-width: 90vw;
   }
 }
 
