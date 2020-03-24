@@ -7,9 +7,8 @@ div.hamburger-cont{
     background-color:transparent;
     border-radius: 10px;
     transition: var(--transition);
+    clip-path: circle(30px at calc(100% - 35px) 30px);
   }
-
-  
   
   div.hamburger-cont div.hamburger{
     position: absolute;
@@ -56,23 +55,33 @@ div.hamburger-cont{
   }
 
 
+/* Orientation */
+
+@media(orientation:landscape){
+  div.hamburger-cont{
+    width: 40vw;
+  }
+}
+
+@media(orientation:portrait){
+  div.hamburger-cont{
+    width: calc(100vw - 60px);
+  }
+}
+
 /* Touch device (none) and Mouse device (fine) */
 
-@media (pointer:none){
-  div.hamburger-cont{
-    widows: 80vw;
-    clip-path: circle(30px at calc(80vw - 35px) 30px);
-  }
-
+@media (pointer:coarse){
+  
   div.hamburger-cont.menu-open{
     clip-path: circle(100%);
     background-color: black;
     transition: var(--transition);  
   }
   
-  div.hamburger-cont > .hamburger > div,
-  div.hamburger-cont > .hamburger > div:before, 
-  div.hamburger-cont > .hamburger > div:after{
+  div.hamburger-cont > div.hamburger > div,
+  div.hamburger-cont > div.hamburger > div:before, 
+  div.hamburger-cont > div.hamburger > div:after{
     transition: var(--transition);
   }
     
@@ -87,6 +96,18 @@ div.hamburger-cont{
     transform: rotate(90deg);
     transition: var(--transition)
   }
+
+  div.hamburger-cont.menu-open + div.content{
+    filter: blur(5px);
+    transition: var(--transition);
+  }
+  
+  div.hamburger-cont.menu-open + div.content div.parallax > div.text-box > h2,
+  div.hamburger-cont.menu-open + div.content div.parallax > div.text-box > p > a{
+    color:white;
+  }
+  
+  
 }
 
 @media (pointer:fine){
@@ -101,18 +122,20 @@ div.hamburger-cont{
     transition: var(--transition);
   }
 
-  div.hamburger-cont{
-    width:30vw;
-    clip-path: circle(30px at calc(30vw - 35px) 30px);
+  div.hamburger-cont:hover + div.content{
+    filter: blur(5px);
+    transition: var(--transition);
   }
+  
+  div.hamburger-cont:hover + div.content div.parallax > div.text-box > h2,
+  div.hamburger-cont:hover + div.content div.parallax > div.text-box > p > a{
+    color:white;
+  }
+  
+
 }
   
-
-
-  
-  
-  
-/* Mnu list*/
+/* Menu list*/
 div.hamburger-cont > div.menu li{
   text-decoration: none;
   color: var(--primary-color);

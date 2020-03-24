@@ -14,16 +14,4 @@ div.App{
   background: url(/img/twill.jpg) fixed;
 }
 
-/* Menu*/
-
-div.hamburger-cont:hover + div.content{
-  filter: blur(5px);
-  transition: var(--transition);
-}
-
-div.hamburger-cont:hover + div.content div.parallax > div.text-box > h2,
-div.hamburger-cont:hover + div.content div.parallax > div.text-box > p > a{
-  color:white;
-}
-
 
