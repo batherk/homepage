@@ -9,8 +9,8 @@ div.content div.parallax{
 }
 
 div.App{
-  height:100%;
-  width: 100%;
+  min-height:100vh;
+  min-width: 100vw;
   background: url(/img/twill.jpg) fixed;
 }
 
