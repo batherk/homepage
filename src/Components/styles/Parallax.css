@@ -17,7 +17,7 @@
     }
 
     div.parallax > div.image{
-        height: 70vh;
+        height: 55vh;
     }
 
     div.parallax > div.text-box{
@@ -83,18 +83,20 @@ div.parallax > div.text-box{
 
 
 
-/* On image hover */
+/* Touch device (coarse,none) and Mouse device (fine) */
 
-div.parallax > div.image:hover + div.text-box p, div.parallax > div.image:hover + div.text-box h2,
-div.parallax > div.image:hover + div.text-box a{
-    color: white;
-    transition: var(--transition);
-}
+@media (pointer:fine){
+    div.parallax > div.image:hover + div.text-box p, div.parallax > div.image:hover + div.text-box h2,
+    div.parallax > div.image:hover + div.text-box a{
+        color: white;
+        transition: var(--transition);
+    }
 
-div.parallax > div.image:hover + div.text-box{
-    filter:blur(5px);
-    transition: var(--transition);
-    scale:0.95;
+    div.parallax > div.image:hover + div.text-box{
+        filter:blur(5px);
+        transition: var(--transition);
+        scale:0.95;
+    }
 }
 
 

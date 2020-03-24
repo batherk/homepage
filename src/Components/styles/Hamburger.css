@@ -73,10 +73,9 @@ div.hamburger-cont{
   }
 }
 
-/* Touch device (none) and Mouse device (fine) */
+/* Touch device (coarse,none) and Mouse device (fine) */
 
-@media (pointer:coarse){
-  
+@media (pointer:coarse), (pointer:none){
   div.hamburger-cont.menu-open{
     clip-path: circle(100%);
     background-color: black;
