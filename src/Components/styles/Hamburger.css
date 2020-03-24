@@ -9,7 +9,7 @@ div.hamburger-cont{
     transition: var(--transition);
     clip-path: circle(30px at calc(100% - 35px) 30px);
     max-height: 90vh;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   
   div.hamburger-cont div.hamburger{
