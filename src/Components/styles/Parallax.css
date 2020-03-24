@@ -16,8 +16,8 @@
     }
 
     div.parallax > div.text-box{
-        width: 60vw;
-        height: 30vh;
+        max-width:80vw;
+        min-height: 30vh;
     }
 
     div.parallax div.text-box h2{
