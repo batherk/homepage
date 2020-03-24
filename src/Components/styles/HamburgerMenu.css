@@ -12,7 +12,6 @@ div.menu > div.category{
 }
 
 div.menu > div.category > div.header-container{
-    width: 30%;
     margin: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -73,6 +72,10 @@ div.menu li{
     div.menu > div.category > ul > li{
         text-align: center;
     }
+    div.menu > div.category > div.header-container{
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 501px){
@@ -86,5 +89,10 @@ div.menu li{
 
     div.menu > div.category > ul > li{
         text-align: left;
+    }
+
+    div.menu > div.category > div.header-container{
+        margin: 0px 20px;
+        width: 30%;
     }
 }

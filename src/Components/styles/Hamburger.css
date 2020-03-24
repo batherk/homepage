@@ -10,6 +10,7 @@ div.hamburger-cont{
     clip-path: circle(30px at calc(100% - 35px) 30px);
     max-height: 90vh;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   
   div.hamburger-cont div.hamburger{
