@@ -10,7 +10,7 @@
 
 div.image:hover img{
     scale:1.05;
-    filter: grayscale(30%);
+    filter: grayscale(0);
     box-shadow: 6px 11px 42px 11px;
 }
 
