@@ -6,7 +6,7 @@ export default (props)=>{
   return(
     <div class="text-box">
         <h2>{props.title}</h2>
-        <p dangerouslySetInnerHTML={{__html:props.text}}></p>
+        <p dangerouslySetInnerHTML={{__html:props.text}}></p> 
     </div>
     
   );

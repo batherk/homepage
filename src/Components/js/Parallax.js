@@ -11,7 +11,7 @@ export default (props) => {
     return (
     <div className="parallax" image-side={imageSide}>
         <Image url={props.imageURL}/>
-        {props.text ? textbox : null}
+        {props.title ? textbox : null}
     </div>
     
   );
