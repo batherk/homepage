@@ -61,7 +61,11 @@ div.hamburger-cont div.hamburger{
     background-color: black;
     transition: var(--transition);  
   }
-  
+
+  div.hamburger-cont.menu-open div.menu{
+    display:flex;
+  }
+
   div.hamburger-cont > div.hamburger > div,
   div.hamburger-cont > div.hamburger > div:before, 
   div.hamburger-cont > div.hamburger > div:after{
