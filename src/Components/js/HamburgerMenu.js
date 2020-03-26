@@ -29,7 +29,7 @@ export default ()=>{
                     <h3>Dans</h3>
                 </div>
             <ul className="Dance">
-                <li className={page==="ShowTeam"? "current" : "other"} onClick={()=>setPage("ShowTeam")}>SalsaNor Mens Show Team</li>
+                <li className={page==="ShowTeam"? "current" : "other"} onClick={()=>setPage("ShowTeam")}>SalsaNor Men Show Team</li>
                 <li className={page==="NTNUI Salsa"? "current" : "other"} onClick={()=>setPage("NTNUI Salsa")}>NTNUI Salsa</li>
                 <li className={page==="Sosialt"? "current" : "other"} onClick={()=>setPage("Sosialt")}>Sosialt</li>
             </ul>
