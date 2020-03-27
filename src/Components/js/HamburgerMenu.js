@@ -31,7 +31,7 @@ export default ()=>{
             <ul className="Dance">
                 <li className={page==="ShowTeam"? "current" : "other"} onClick={()=>setPage("ShowTeam")}>SalsaNor Men Show Team</li>
                 <li className={page==="NTNUI Salsa"? "current" : "other"} onClick={()=>setPage("NTNUI Salsa")}>NTNUI Salsa</li>
-                <li className={page==="Sosialt"? "current" : "other"} onClick={()=>setPage("Sosialt")}>Sosialt</li>
+                <li className={page==="Reising"? "current" : "other"} onClick={()=>setPage("Reising")}>Reising</li>
             </ul>
             </div>
             <div className="category">

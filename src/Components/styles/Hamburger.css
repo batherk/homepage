@@ -66,6 +66,10 @@ div.hamburger-cont div.hamburger{
     display:flex;
   }
 
+  div.hamburger-cont div.menu{
+    display:none;
+  }
+
   div.hamburger-cont > div.hamburger > div,
   div.hamburger-cont > div.hamburger > div:before, 
   div.hamburger-cont > div.hamburger > div:after{
@@ -82,11 +86,6 @@ div.hamburger-cont div.hamburger{
     top: 0;
     transform: rotate(90deg);
     transition: var(--transition)
-  }
-
-  div.hamburger-cont.menu-open + div.content{
-    filter: blur(5px);
-    transition: var(--transition);
   }
   
   div.hamburger-cont.menu-open + div.content div.parallax > div.text-box > h2,
@@ -138,6 +137,9 @@ div.hamburger-cont div.hamburger{
   div.hamburger-cont div.hamburger{
     top: 25px;
     right: 40px;
+  }
+  div.hamburger-cont.menu-open + div.content{
+    filter: blur(5px);
   }
 }
 

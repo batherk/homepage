@@ -7,25 +7,16 @@
         align-items: center;
         height: auto;
         justify-content: space-evenly;
-        padding: 5vh 0;
     }
 
     div.parallax > div.image{
-        width: 90vw;
+        width: calc(100vw - 20px);
         height: 60vh;
     }
 
     div.parallax > div.text-box{
         max-width:80vw;
         min-height: 30vh;
-    }
-
-    div.parallax div.text-box h2{
-        font-size: 30px;
-    }
-
-    div.parallax div.text-box p{
-        font-size: 15px;
     }
 }
 
@@ -50,14 +41,6 @@
 
     div.parallax[image-side="right"]{
         flex-direction: row-reverse;
-      }
-
-      div.parallax div.text-box h2{
-        font-size: 50px;
-    }
-
-    div.parallax div.text-box p{
-        font-size: 20px;
     }
 
 }

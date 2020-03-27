@@ -18,7 +18,7 @@ export default ()=>{
     "BAT Streaming":"posts/streaming.json",
     "ShowTeam":"posts/showteam.json",
     "NTNUI Salsa":"posts/ntnuisalsa.json",
-    "Sosialt":"posts/salsasosialt.json",
+    "Reising":"posts/salsaturer.json",
     "Volleyball":"posts/volleyball.json"
   }
 
