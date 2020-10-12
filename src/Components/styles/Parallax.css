@@ -72,7 +72,7 @@ div.parallax > div.text-box{
     }
 
     div.parallax > div.image:hover + div.text-box{
-        filter:blur(5px);
+        /*filter:blur(5px);*/
         transition: var(--transition);
         scale:0.95;
     }
