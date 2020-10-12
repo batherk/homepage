@@ -1,6 +1,7 @@
-import React, { useState, useEffect, createContext } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
+import { useHistory, useLocation } from "react-router";
+import { Hamburger, Parallax } from '.';
 import './../styles/App.css';
-import {Parallax, Hamburger} from '.'
 
 
 export const PageContext = createContext(null);
@@ -8,43 +9,44 @@ export const PageContext = createContext(null);
 
 export default ()=>{
 
-  const [page,setPage] = useState("Home");
+  const location = useLocation()
+  const history = useHistory()
+
   const [posts, setPosts] = useState([]);
 
   const paths = {
-    "Home":"posts/front.json",
-    "AI":"posts/ai.json",
-    "Sprint":"posts/sprint.json",
-    "BAT Streaming":"posts/streaming.json",
-    "ShowTeam":"posts/showteam.json",
-    "NTNUI Salsa":"posts/ntnuisalsa.json",
-    "Reising":"posts/salsaturer.json",
-    "Volleyball":"posts/volleyball.json"
+    "/":"posts/front.json",
+    "/ai":"posts/ai.json",
+    "/sprint":"posts/sprint.json",
+    "/streaming":"posts/streaming.json",
+    "/showteam":"posts/showteam.json",
+    "/salsa":"posts/ntnuisalsa.json",
+    "/travelling":"posts/salsaturer.json",
+    "/volleyball":"posts/volleyball.json"
   }
 
-
   useEffect(() => {
-    if (paths[page]){
-      fetch(paths[page])
+    if (paths[location.pathname]){
+      fetch(paths[location.pathname])
     .then((res)=>res.json())
     .then((json)=>{
       setPosts(json);
     });
     }
-  }, [page]);
+  }, [location, paths]);
 
   return (
-    <PageContext.Provider value={{page,setPage}}>
-      <div className="App">
-        <Hamburger/>
-        <div className="content">
-          {posts.map((post,index)=>{
-            const imageSide = (index % 2 === 0 ? "left" : "right")
-            const imageURL = '/img/' + post.imageName
-            return <Parallax imageSide={imageSide} title={post.title} text={post.text} imageURL={imageURL}/>
-          })}
-        </div>
-      </div>
+    <PageContext.Provider value={{history, location}}>
+          <div className="App">
+            <Hamburger/>
+            <div className="content">
+              {posts?.map((post,index)=>{
+                const imageSide = (index % 2 === 0 ? "left" : "right")
+                const imageURL = '/img/' + post.imageName
+                return <Parallax key={index} imageSide={imageSide} title={post.title} text={post.text} imageURL={imageURL}/>
+              })}
+            </div>
+          </div>
     </PageContext.Provider>
   );
 }
