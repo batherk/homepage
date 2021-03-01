@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { useHistory, useLocation } from "react-router";
-import { Hamburger, Parallax } from '.';
+import { Hamburger, Parallax, VideoParallax } from '.';
 import './../styles/App.css';
 
 
@@ -45,6 +45,7 @@ export default ()=>{
                 const imageURL = '/img/' + post.imageName
                 return <Parallax key={index} imageSide={imageSide} title={post.title} text={post.text} imageURL={imageURL}/>
               })}
+            <VideoParallax/>
             </div>
           </div>
     </PageContext.Provider>

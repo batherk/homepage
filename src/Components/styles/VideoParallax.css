@@ -1,0 +1,27 @@
+div.video.parallax img {
+  height: 300px;
+  width: auto;
+  z-index: 3;
+}
+
+div.video.parallax div {
+  width: 50%;
+}
+
+div.video.parallax {
+  display: flex;
+}
+
+div.mobile,
+div.pc {
+  position: relative;
+}
+
+div.mobile div,
+div.pc div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
